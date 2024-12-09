@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 지도</title>
+    <!-- 네이버 지도 API -->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=502a1hyn72&submodules=geocoder"></script>
+    <style>
+        /* CSS 스타일 직접 작성 */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            width: 100%;
+            height: 100vh; /* 화면 전체 높이 사용 */
+        }
+    </style>
+</head>
+<body>
+<!-- 네이버 지도 표시 영역 -->
+<div id="map"></div>
+
+<!-- JavaScript 코드 직접 작성 -->
+<script>
+    var map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(37.5665, 126.9780), // 서울 중심 좌표
+        zoom: 10
+    });
+</script>
+</body>
+</html>
